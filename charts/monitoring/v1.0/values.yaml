@@ -10,13 +10,13 @@ fluent-bit:
 
 kube-prometheus-stack:
   enabled: true
-  # prometheus:
-  #   enabled: true
-  # grafana:
-  #   enabled: true
-  #   sidecar:
-  #     datasources:
-  #       enabled: true
+prometheus:
+  enabled: true
+grafana:
+  enabled: true
+  sidecar:
+    datasources:
+      enabled: true
 
 filebeat:
   enabled: false
