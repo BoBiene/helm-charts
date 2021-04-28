@@ -16,11 +16,11 @@ dependencies:
   version: "*"
   repository: "https://prometheus-community.github.io/helm-charts"
 - name: "grafana"
-  condition: kube-prometheus-stack.grafana.enabled
+  condition: false
   repository: "https://grafana.github.io/helm-charts"
   version: "*"
 - name: "prometheus"
-  condition: kube-prometheus-stack.prometheus.enabled
+  condition: false
   version: "*"
   repository: "https://prometheus-community.github.io/helm-charts"
 - name: "filebeat"
